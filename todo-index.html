@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Picnic Planner - Adventure with Kate 🌻</title>
+  <link href="todo-styles.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Sky Background -->
+  <div class="sky-bg">
+    <div class="cloud cloud-1"></div>
+    <div class="cloud cloud-2"></div>
+    <div class="sun"></div>
+  </div>
+
+  <!-- Floating Sunflowers -->
+  <div class="floating-flowers">
+    <div class="sunflower sunflower-1">🌻</div>
+    <div class="sunflower sunflower-2">🌻</div>
+    <div class="sunflower sunflower-3">🌻</div>
+    <div class="sunflower sunflower-4">🌻</div>
+  </div>
+
+  <!-- Main Container -->
+  <div class="container">
+    <!-- Header -->
+    <header class="picnic-header">
+      <div class="header-content">
+        <div class="header-title">
+          <span class="title-emoji">🧺</span>
+          <h1>Our Picnic Adventure</h1>
+          <span class="title-emoji">🌻</span>
+        </div>
+        <p class="header-subtitle">Planning the perfect day with Kate 💙</p>
+      </div>
+      <div class="music-widget">
+        <button id="musicToggle" class="music-btn" title="Play BUKO">
+          🎵 BUKO
+        </button>
+        <div class="weather-widget">
+          <div class="temp">Perfect Day</div>
+          <div class="condition">☀️ Ready for Adventure</div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Picnic Blanket Card -->
+      <div class="blanket-card">
+        <div class="blanket-pattern"></div>
+        
+        <!-- Input Section -->
+        <section class="input-section">
+          <div class="input-wrapper">
+            <input 
+              type="text" 
+              id="itemInput" 
+              placeholder="Add picnic item (e.g., Sandwiches, Blanket, Sunscreen)..."
+              class="item-input"
+            />
+            <button id="addBtn" class="add-btn">🌻 Add</button>
+          </div>
+        </section>
+
+        <!-- Categories -->
+        <section class="categories">
+          <button class="category-btn active" data-category="all">
+            <span class="category-icon">📋</span> All Items
+          </button>
+          <button class="category-btn" data-category="food">
+            <span class="category-icon">🍕</span> Food & Drinks
+          </button>
+          <button class="category-btn" data-category="gear">
+            <span class="category-icon">🎒</span> Gear & Supplies
+          </button>
+          <button class="category-btn" data-category="activities">
+            <span class="category-icon">🎮</span> Fun & Games
+          </button>
+          <button class="category-btn" data-category="other">
+            <span class="category-icon">⭐</span> Special Items
+          </button>
+        </section>
+
+        <!-- Filters -->
+        <section class="filter-section">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="active">📌 To Pack</button>
+          <button class="filter-btn" data-filter="completed">✓ Packed</button>
+        </section>
+
+        <!-- Items List -->
+        <section class="items-section">
+          <div id="itemsList" class="items-list">
+            <!-- Items will be inserted here -->
+          </div>
+          <div id="emptyState" class="empty-state">
+            <div class="empty-icon">🌻</div>
+            <p>Your picnic basket is empty!</p>
+            <p class="empty-subtitle">Start adding items to pack for your adventure with Kate</p>
+          </div>
+        </section>
+
+        <!-- Progress Bar -->
+        <section class="progress-section">
+          <div class="progress-info">
+            <span class="progress-label">Packing Progress</span>
+            <span class="progress-percent" id="progressPercent">0%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+          </div>
+          <div class="progress-stats">
+            <span><strong id="packedCount">0</strong> packed</span>
+            <span>•</span>
+            <span><strong id="totalCount">0</strong> total</span>
+          </div>
+        </section>
+
+        <!-- Actions -->
+        <section class="actions-section">
+          <button id="clearBtn" class="action-btn clear-btn" title="Clear packed items">
+            🗑️ Clear Packed
+          </button>
+          <button id="exportBtn" class="action-btn export-btn" title="Export your list">
+            📋 Export List
+          </button>
+        </section>
+      </div>
+
+      <!-- Tips Section -->
+      <section class="tips-section">
+        <h3>🌻 Kate's Picnic Tips</h3>
+        <ul class="tips-list">
+          <li>🌞 Don't forget sunscreen - Kate's skin is precious! ☀️</li>
+          <li>💙 Pack her favorite blue blanket for extra comfort</li>
+          <li>🌻 Sunflowers make the perfect picnic decoration</li>
+          <li>💧 Bring plenty of water to stay hydrated</li>
+          <li>🎵 Create a playlist with BUKO and her favorite songs</li>
+          <li>📸 Capture all the beautiful moments together!</li>
+        </ul>
+      </section>
+
+      <!-- Love Note -->
+      <section class="love-note">
+        <p>🌻 Making memories with you, one picnic at a time 💙</p>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="picnic-footer">
+      <p>Everything saves automatically 💾 | Let's make it perfect for Kate! 💙🌻</p>
+    </footer>
+  </div>
+
+  <!-- Audio Player (Hidden) -->
+  <audio id="bukoAudio" loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="todo-script.js"></script>
+</body>
+</html>
