@@ -1,155 +1,355 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Smooth Portfolio - My Work & Stories</title>
-  <link href="styles.css" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Our Little Picnic 🌼</title>
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="styles.css">
+
 </head>
+
 <body>
-  <div class="container">
-    <header>
-      <div class="brand">
-        <div class="logo">SP</div>
-        <div>
-          <div class="title">My Portfolio</div>
-          <div class="subtitle">Design & Stories — Modern UI template</div>
-        </div>
-      </div>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#work">Work</a>
-        <a href="#library">Library of Us</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
 
-    <main class="hero">
-      <section class="hero-card">
-        <h1>Design that feels smooth.</h1>
-        <p class="lead">A responsive portfolio template with glass-like cards, subtle motion, and a clean layout. Plus, a special interactive experience to celebrate love and memories.</p>
-        <a class="cta" href="#work">View Work</a>
+    <!-- Floating Background -->
 
-        <div class="tags">
-          <div class="mini">Responsive</div>
-          <div class="mini">Accessible</div>
-          <div class="mini">Interactive</div>
-          <div class="mini">GitHub Pages ready</div>
-        </div>
-      </section>
+    <div class="sky">
 
-      <aside class="profile">
-        <div class="card avatar">👨‍💻</div>
-        <div class="card"> 
-          <div class="strong">Hello — I'm Developer</div>
-          <div class="muted">Creative designer & developer.</div>
-        </div>
-        <div class="card">
-          <div class="strong">Let's Connect</div>
-          <div class="muted" id="contact">hello@example.com</div>
-        </div>
-      </aside>
-    </main>
+        <div class="sun"></div>
 
-    <section id="work" class="hero-card">
-      <h2>Selected Work</h2>
-      <div class="grid">
-        <div class="mini">Project A — landing page</div>
-        <div class="mini">Project B — dashboard</div>
-        <div class="mini">Project C — e‑commerce</div>
-      </div>
+        <div class="cloud cloud1"></div>
+
+        <div class="cloud cloud2"></div>
+
+        <div class="cloud cloud3"></div>
+
+    </div>
+
+    <div id="hearts"></div>
+
+    <div id="fireflies"></div>
+
+    <div id="butterflies"></div>
+
+    <!-- ========================= -->
+    <!-- HOME SCREEN -->
+    <!-- ========================= -->
+
+    <section id="home">
+
+        <div class="hero">
+
+            <h1>
+
+                Our Little Picnic 🌼
+
+            </h1>
+
+            <p>
+
+                Every flower reminds me
+                of another reason
+                to love you.
+
+            </p>
+
+            <button id="startButton">
+
+                🧺 Start Our Picnic
+
+            </button>
+
+        </div>
+
     </section>
 
-    <!-- Library of Us Section -->
-    <section id="library" class="hero-card library-intro">
-      <h2>The Library of Us</h2>
-      <p class="lead">An interactive experience celebrating love and memories. 11 months of moments, stories, and forever.</p>
-      <button id="openLibrary" class="cta library-btn">🌻 Open The Library</button>
-    </section>
+    <!-- ========================= -->
+    <!-- PICNIC -->
+    <!-- ========================= -->
 
-    <section id="about" class="hero-card about-section">
-      <h2>About this template</h2>
-      <p class="lead">A minimal one‑page starter built for GitHub Pages. Customize text, add projects, and now includes an interactive memory library. Perfect for portfolios and special occasions.</p>
-    </section>
+    <section id="picnic">
 
-    <footer>
-      © <span id="year"></span> Portfolio • Built with Love
-    </footer>
-  </div>
+        <div class="tree"></div>
 
-  <!-- Background & Ambient Effects -->
-  <div id="background" class="ambient-bg"></div>
-  <div id="ambient">
-    <div id="stars"></div>
-    <div id="petals"></div>
-  </div>
+        <div class="flowers"></div>
 
-  <!-- Audio Player (Hidden) -->
-  <audio id="themeAudio" loop>
-    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
-  </audio>
+        <div class="grass"></div>
 
-  <!-- Library Modal Overlay -->
-  <div id="libraryOverlay" class="library-overlay">
-    <!-- Welcome Scene -->
-    <section id="welcomeScene" class="library-scene active">
-      <div class="welcome-content">
-        <p class="intro-text">To My Beloved</p>
-        <h1 class="library-title">Kate</h1>
-        <p class="quote">
-          11 Months of Forever<br>
-          A Library of Our Love
-        </p>
-        <p class="anniversary-text">Our 11th Month Anniversary</p>
-        <button id="enterLibrary" class="btn-enter">
-          🌻 Open Our Library
+        <div class="blanket">
+            <div class="blanket">
+                <!-- Picnic Basket -->
+<div class="picnic-item basket" id="basket">
+
+    <div class="emoji">
+        🧺
+    </div>
+
+    <span>Love Letters</span>
+
+</div>
+
+
+
+<!-- Camera -->
+<div class="picnic-item camera" id="camera">
+
+    <div class="emoji">
+        📷
+    </div>
+
+    <span>Our Photos</span>
+
+</div>
+
+
+
+<!-- Strawberry -->
+<div class="picnic-item strawberry" id="strawberry">
+
+    <div class="emoji">
+        🍓
+    </div>
+
+    <span>Why I Love You</span>
+
+</div>
+
+
+
+<!-- Sunflower -->
+<div class="picnic-item sunflower" id="memory">
+
+    <div class="emoji">
+        🌻
+    </div>
+
+    <span>Favorite Memories</span>
+
+</div>
+
+
+
+<!-- Birthday Cake -->
+<div class="picnic-item cake" id="birthday">
+
+    <div class="emoji">
+        🎂
+    </div>
+
+    <span>April 11</span>
+
+</div>
+
+
+
+<!-- Gift -->
+<div class="picnic-item gift" id="gift">
+
+    <div class="emoji">
+        🎁
+    </div>
+
+    <span>11 Months</span>
+
+</div>
+
+
+
+<!-- Ring -->
+<div class="picnic-item ring" id="ring">
+
+    <div class="emoji">
+        💍
+    </div>
+
+    <span>1st Anniversary</span>
+
+</div>
+
+</div>
+
+</section>
+<!-- ========================= -->
+<!-- MAIN POPUP -->
+<!-- ========================= -->
+
+<div id="modal" class="modal">
+
+    <div class="modal-card">
+
+        <button
+            id="closeModal">
+
+            ✕
+
         </button>
-        <button id="toggleMusic" class="btn-music">🎵 Play Our Song</button>
-        <button id="closeLibrary" class="btn-close-welcome">✕ Close</button>
-      </div>
-    </section>
 
-    <!-- Library Scene -->
-    <section id="libraryScene" class="library-scene">
-      <div class="library-header">
-        <h2>Our Library</h2>
-        <button id="backToWelcome" class="btn-back">← Back</button>
-      </div>
+        <h2
+            id="modalTitle">
 
-      <div class="library-container">
-        <div class="bookshelf" id="bookshelf"></div>
-      </div>
+            Title
 
-      <!-- Modal for book details -->
-      <div id="bookModal" class="modal">
-        <div class="modal-content">
-          <button class="modal-close">&times;</button>
-          <div class="modal-body">
-            <div class="book-cover" id="bookCover"></div>
-            <h3 id="bookTitle"></h3>
-            <p id="bookContent"></p>
-            <div id="bookMeta" class="book-meta"></div>
-          </div>
+        </h2>
+
+        <div
+            id="modalContent">
+
         </div>
-      </div>
 
-      <!-- Locked Book Modal -->
-      <div id="lockedBookModal" class="modal">
-        <div class="modal-content locked-modal">
-          <button class="modal-close">&times;</button>
-          <div class="modal-body">
-            <div class="lock-icon">🔐</div>
-            <h3 id="lockedTitle"></h3>
-            <p id="lockedMessage"></p>
-            <div class="countdown" id="countdown"></div>
-          </div>
+    </div>
+
+</div>
+<!-- ========================= -->
+<!-- LOCKED SURPRISE MODAL -->
+<!-- ========================= -->
+
+<div id="lockedModal" class="modal">
+
+    <div class="modal-card locked-card">
+
+        <button
+            id="closeLocked">
+
+            ✕
+
+        </button>
+
+        <div class="lock-icon">
+
+            🔒
+
         </div>
-      </div>
-    </section>
-  </div>
 
-  <script src="script.js"></script>
+        <h2 id="lockedTitle">
+
+            Surprise Locked
+
+        </h2>
+
+        <p id="lockedMessage">
+
+            This surprise will unlock soon...
+
+        </p>
+
+        <div id="countdown">
+
+            00 Days 00 Hours 00 Minutes
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- ========================= -->
+<!-- SECRET MESSAGE -->
+<!-- ========================= -->
+
+<div id="secretMessage">
+
+    <div class="secret-card">
+
+        ❤️
+
+        <h2>
+
+            One More Thing...
+
+        </h2>
+
+        <p>
+
+            Thank you for being my favorite person.
+
+            Every memory with you is a treasure,
+            and every day with you feels like
+            another beautiful picnic.
+
+            I love you.
+
+            Always.
+
+        </p>
+
+    </div>
+
+</div>
+
+
+
+<!-- ========================= -->
+<!-- MUSIC -->
+<!-- ========================= -->
+
+<audio
+id="themeMusic"
+loop>
+
+<source
+src="music/glue-song.mp3"
+type="audio/mpeg">
+
+</audio>
+
+
+
+<button
+id="musicButton">
+
+🎵
+
+</button>
+
+
+
+<!-- ========================= -->
+<!-- LOADING SCREEN -->
+<!-- ========================= -->
+
+<div id="loadingScreen">
+
+    <div class="loading-content">
+
+        <h1>
+
+            🌼
+
+        </h1>
+
+        <p>
+
+            Preparing Our Little Picnic...
+
+        </p>
+
+    </div>
+
+</div>
+
+
+
+<script src="script.js"></script>
+
 </body>
+
 </html>
